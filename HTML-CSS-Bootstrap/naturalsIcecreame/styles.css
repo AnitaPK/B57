@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: aqua;
+}
+.logoAndSearch{
+    display: flex;
+    justify-content:space-around;
+}
+
+.mainNav{
+    height: 60px;
+    background-color: gray;
+}
+
+ul.navBar{
+    list-style-type: none;
+    width: 80%;
+    margin: 10px auto;
+}
+
+li.navList{
+/* float:right; */
+display: inline-block;
+margin: 15px 20px;
+}
+
+.navItem:link{
+    color:white;
+    text-decoration: none;
+    font-size: large;
+}
+.navItem:hover{
+    color: green;
+}
+.navItem:active{}
+
+.navItem:visited{}
+
+.headingClass{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+}
+.containerOne{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.Column{
+    /* width: 23%; */
+    /* padding-left: 10px; */
+    flex:23%
+}
+.cardOne{
+    width: 18rem;
+    height: 300px;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 2px gray;
+}
+.cardImg{
+    width:100%;
+    height: 70%;
+}
+.cardOne h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.btn{
+    padding: 5px 10px;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.buy{
+    background-color: green;
+   
+
+}
+.readMore{
+    background-color: rgb(146, 146, 146);
+    
+}
+.readMore:hover{
+    background-color: green;
+    
+}
+.footer1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(77, 76, 76);
+    color: white;
+}
+.footer1 h3{
+    color: gray;
+}
+.iconFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+.iconFooter div{
+    margin: 10px 15px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.iconFooter div i{
+    padding: 10px;
+}
+.iconFooter div:hover{
+    background-color: white;
+    color: green;
+    animation: iconMove 1s;
+}
+@keyframes iconMove{
+    from{transform:translate(1px)}
+    
+    to{transform:translateY(-30px)}
+}
+@media screen and (max-width:900px) {
+    body{
+        background-color: cadetblue;
+    }
+    .Column{
+        /* width:48%;s */
+        flex:48%
+    }
+    .footer1{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    body{
+        background-color: coral;
+    }
+    .Column{
+        flex:100%
+    }
+    .footer1{
+        grid-template-columns: auto;
+    }
+}

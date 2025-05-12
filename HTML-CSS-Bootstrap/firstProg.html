@@ -57,10 +57,107 @@
             color: white;
 
         }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            /* border-spacing: 10px; */
+            margin: 5px 15px;
+        }
+         th{
+            /* border: 1px solid black; */
+            background-color: gray;
+        }
+        td{
+            /* border: 1px solid black; */
+            /* background-color: pink; */
+            padding: 3px 10px;
+        } 
+        tr{
+            background-color: pink;
+        }
+        tr:nth-child(odd){
+            background-color: red;
+        }
+        tr:hover{
+            background-color: rgb(255, 118, 140);
+        }
+        ul{
+            list-style-type: square;
+        }
     </style>
 </head>
 <body>
     <div id="IAmAtTop"></div>
+List 
+Discriptive list 
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Hyper Text Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+</dl>
+
+Ordered List 
+<ol>
+    <li>Pune</li>
+    <li>Mumbai</li>
+    <ol type="i" start="101">
+            <li>Thane</li>
+            <li>Navi Mumbai</li>
+            <li>Bhivandi</li>
+    </ol>
+    <li>Chiplun</li>
+</ol>
+
+
+
+Unordered List 
+
+<ul>
+    <li>Tea</li>
+    <ul>
+        <li>Latte</li>
+        <li>Cold Coffee</li>
+    </ul>
+    <li>Coffee</li>
+</ul>
+
+
+    <table style="width: 97%;">
+        <tr>
+            <th>Name</th>
+            <th>Seat number</th>
+            <th>Conatct Number</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Aliy Bhat</td>
+            <td>as1234</td>
+            <td>1234567890</td>
+            <td><button>Apply</button></td>
+        </tr>
+        <tr>
+            <td>Deepika</td>
+            <td>as1235</td>
+            <td>6734567890</td>
+            <td><button>Apply</button></td>
+        </tr>
+        <tr>
+            <td>Kiyara</td>
+            <td>as1236</td>
+            <td>88884567890</td>
+            <td><button>Apply</button></td>
+        </tr>
+        <tr>
+            <td>Sai Pallavi</td>
+            <td>as1236</td>
+            <td>88884567890</td>
+            <td><button>Apply</button></td>
+        </tr>
+    </table>
+
+
   elements tags  attributes
   <h1 style="color:red;text-align: center;">This is heading</h1>
   <h3>Thi is heading three</h3>
