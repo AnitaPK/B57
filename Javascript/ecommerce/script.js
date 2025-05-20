@@ -52,7 +52,9 @@ const products = [
 ];
 
 
-const pList = document.getElementById('pList')
+// const pList = document.getElementById('pList')
+const pList = document.querySelector('#pList')
+
 
 function renderProducts(){
 
@@ -69,6 +71,26 @@ products.map((product)=>
 </div>
 </div>
 `
-)
+).join('')
 }
 renderProducts();
+
+function changeTheme(){
+  const btnTag = document.querySelector("#themeChangeBTN")
+  if(btnTag.innerHTML == `<i class="fa-solid fa-toggle-off"></i>`){
+   btnTag.innerHTML = '<i class="fa-solid fa-toggle-on"></i>'
+   document.querySelector('body').style.backgroundColor = 'black';
+  //  document.querySelectorAll('.card').style.backgroundColor = 'gray'
+   document.querySelector('body').style.color = 'red';
+
+  }else{
+    btnTag.innerHTML =`<i class="fa-solid fa-toggle-off"></i>`
+       document.querySelector('body').style.backgroundColor = 'white';
+  //  document.querySelectorAll('.card').style.backgroundColor = 'gray'
+   document.querySelector('body').style.color = 'black';
+  }
+}
+
+document.getElementById('themeChangeBTN').addEventListener('click',changeTheme)
+ 
+
