@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Django migrations
+**/migrations/
+!**/migrations/__init__.py
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Databases
+*.sqlite3
+
+# Local settings
+local_settings.py
+.env
+
+# Static files
+staticfiles/
+static/
+media/
+
+# Test/coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+*.cover
+coverage.xml
+*.log
+pytest_cache/
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pycharm specific
+*.iml
+.idea/
+
+# Node (if using npm or React inside Django)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build files
+build/
+dist/
+*.egg-info/
+.eggs/
