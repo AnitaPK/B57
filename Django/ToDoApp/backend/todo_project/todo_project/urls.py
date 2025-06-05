@@ -19,7 +19,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/',include('user.urls'))
+    path('api/',include('user.urls')),
+    path('api/',include('task_app.urls'))
 ]
 #  http://127.0.0.1:8000/api/register/ 
 #  http://127.0.0.1:8000/api/login/ 
+#  http://127.0.0.1:8000/api/tasks/create/
